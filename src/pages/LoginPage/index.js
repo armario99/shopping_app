@@ -11,13 +11,13 @@ function LoginPage() {
   const [password, setPassword] = useState('');
 
   const firebaseConfig = {
-    apiKey: "AIzaSyC_J8mwylM_oCFj9jtjtT_h-5BSdlruoIo",
-    authDomain: "shopping-mall-8b4ac.firebaseapp.com",
-    projectId: "shopping-mall-8b4ac",
-    storageBucket: "shopping-mall-8b4ac.appspot.com",
-    messagingSenderId: "192947437028",
-    appId: "1:192947437028:web:f509af4e9f843f88a99bf1",
-    measurementId: "G-L6XZMHBJ6L"
+    apiKey: "~~",
+    authDomain: "~~",
+    projectId: "~~",
+    storageBucket: "~~",
+    messagingSenderId: "~~",
+    appId: "~~",
+    measurementId: "~~"
   };
   
   // Initialize Firebase
