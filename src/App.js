@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import { Outlet, Routes, Route } from "react-router-dom";
+import React, { useState ,useEffect} from'react';
+import Nav from './components/Nav';
+import MainPage from "./pages/MainPage";
+import LoginPage from "./pages/LoginPage";
+import ProductPage from './pages/ProductPage';
+
+const Layout = () => {
+  return (
+    <div>
+      <Nav />
+      <Outlet />
+    </div>
+  );
+};
+
+
 
 function App() {
+
+  const [products, setProducts] = useState([]);
+  const [sel_product, setSel_product] = useState([]);
+
+  useEffect(() => {
+    fetch("https://fakestoreapi.com/products/")
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data);
+        console.log("store_data",data);
+      });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes> 
+        <Route path="/" element={<Layout />} >
+          <Route index element={<MainPage products={products} setSel_product={setSel_product}/>} />
+          <Route path="login" element={<LoginPage />} />
+          <Route path="/product/:id" element={<ProductPage product={sel_product} />} />
+        </Route>
+      </Routes>
     </div>
   );
 }

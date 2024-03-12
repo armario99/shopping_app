@@ -1,0 +1,45 @@
+.container {
+    width: 100%;
+    margin: 1rem auto;
+    position: relative; /* 부모 요소를 상대적인 위치로 설정 */
+    transform: translateY(50%); /* 컨테이너를 위로 이동하여 수직 가운데 정렬 */
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 24rem; /* md:w-3/4, lg:w-3/4을 대체합니다. */
+    max-width: 600px; /* lg:max-w-lg을 대체합니다. */
+  }
+  
+  .log_input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .log_input input{
+    width: 40%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin-top: 10px; /* 입력란 위쪽 간격 설정 */
+  }
+
+  .log_btn{
+    padding: 10px;
+  }
+
+  .log_btn button{
+    width: 40%;
+    height: 40px;
+    background-color: darkgray;
+    color: #fff;
+    border: none;
+  }
+  .log_btn button:hover {
+    background-color: lightblue;
+  }
+  
+  .log_btn button:active {
+    background-color: darkblue;
+  }

@@ -1,0 +1,49 @@
+.nav_body {
+    width: 100%;
+    height: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+
+.Shop_text {
+    text-decoration: none; /* 링크의 밑줄 제거 */
+   color: #000;
+   position: fixed;
+   font-weight: bold;
+   font-size: 20px;
+   width: 80px;
+   object-fit: contain;
+}
+
+.cart_icon {
+    position: fixed;
+    right: 100px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.my_page {
+    color: black;
+    position: fixed;
+    right: 60px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+.Logout {
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}

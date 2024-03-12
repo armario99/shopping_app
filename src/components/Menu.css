@@ -1,0 +1,24 @@
+.btn_List{
+    padding-top: 10px;
+    width: 100%;
+}
+
+.btn_List_items{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+.btn{
+    border: 3px solid rgb(92, 88, 88); /* 크기, 유형, 색상 설정 */
+    width: 140px;
+    height: 70px;
+    line-height: 70px; /* 텍스트 요소의 높이와 같은 값으로 설정하여 수직 가운데 정렬 */
+    border-radius: 5px; /* 외각을 둥글게 설정 */
+    margin: 20px;
+    background-color:white;
+}
+.btn.active {
+    background-color: lightblue; /* 활성화된 버튼의 배경색 */
+  }
+  

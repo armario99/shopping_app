@@ -1,0 +1,57 @@
+.item_List{
+    width: 100%;
+}
+/*
+.showing {
+    원하는 스타일 추가 
+  }
+ */ 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4개의 열을 생성 */
+    gap: 10px; /* 그리드 아이템 사이의 간격 설정 */
+}
+  
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    border: 3px solid gray;
+}
+
+.products-card{
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.products-img {
+    width: 200px;
+    height: 300px;
+    
+}
+
+.products-img p {
+    white-space: nowrap; /* 줄 바꿈 방지 */
+    overflow: hidden; /* 넘치는 부분 감춤 */
+    text-overflow: ellipsis; /* 넘치는 부분에 ... 표시 */
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+.products-img img{
+    width: 200px;
+    height: 200px;
+}
+.products-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: bold;
+    align-items: center;
+    font-size: 30px;
+}
+.products-info button {
+    font-size: 20px;
+}
